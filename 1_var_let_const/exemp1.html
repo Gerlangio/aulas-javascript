@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 1</title>
+  </head>
+  <body>
+    <script>
+      var nome = "1234";
+      console.log(nome);
+      console.log(typeof nome); //typeof mostra o tipo
+
+      var idade = 21;
+      console.log(idade);
+      console.log(typeof idade);
+
+      var altura = 1.78;
+      console.log(altura);
+      console.log(typeof altura);
+
+      var x = -10;
+      console.log(x);
+      console.log(typeof x);
+
+      var casado = true;
+      console.log(casado);
+      console.log(typeof casado);
+
+      var solteiro = false;
+      console.log(solteiro);
+      console.log(typeof solteiro);
+
+      var deporte;
+      console.log(deporte);
+      console.log(typeof deporte);
+
+      var nada = null;
+      console.log(nada);
+      console.log(typeof nada);
+      console.log("*****************");
+    </script>
+
+    <script>
+      var a = 1,
+        b = 2,
+        c = 3;
+      resultado = a + b + c;
+      console.log(resultado);
+
+      resultado = a - b - c;
+      console.log(resultado);
+
+      resultado = a * b * c;
+      console.log(resultado);
+
+      resultado = a / b / c;
+      console.log(resultado);
+
+      resultado = (a % b) % c;
+      console.log(resultado);
+      console.log("*****************");
+    </script>
+
+    <script>
+      var numero = 1;
+      numero = numero + 1;
+      console.log(numero);
+      console.log("*****************");
+
+      var numero = 10;
+      numero++;
+      console.log(numero);
+
+      var numero = 10;
+      numero--;
+      console.log(numero);
+
+      var numero = 10;
+      numero += 5;
+      console.log(numero);
+
+      var numero = 10;
+      numero -= 5;
+      console.log(numero);
+      console.log("*****************");
+    </script>
+
+    <script>
+      var nome = "catalina";
+      var idade = 23;
+      console.log(nome + idade);
+      console.log("Você se chama " + nome + " e tem " + idade + " anos.");
+      console.log("*****************");
+
+      idade += nome;
+      console.log(idade);
+    </script>
+
+    <script>
+      var nome = "andre";
+      var idade = 25;
+      var altura = 1.78;
+      var casado = true;
+      var deporte;
+      var numeros = [1, 2, 3, 4, 5];
+
+      console.log(typeof nome);
+      console.log(typeof nome); //obtem o mesmo resultado
+      console.log(typeof idade);
+      console.log(typeof altura);
+      console.log(typeof casado);
+      console.log(typeof desporte);
+      console.log(typeof numeros);
+      console.log("*****************");
+    </script>
+
+    <script>
+      //typeof(variable) - determina o tipo de dado que contem a variável
+      var cidade = "iguatu";
+      alert("A variável cidade é do tipo " + typeof cidade);
+      alert("A variável cidade é do tipo " + typeof cidade);
+      console.log(typeof cidade);
+
+      //conversão implícita
+      var numero = "345";
+      alert("A variável número é do tipo " + typeof numero);
+      console.log("A variável número é do tipo " + typeof numero);
+      console.log("*****************");
+
+      //conversão implícita
+      var numero = 345;
+      alert("A variável número é do tipo " + typeof numero);
+      console.log("A variável número é do tipo " + typeof numero);
+      console.log("*****************");
+
+      //conversão explícita
+      var numero = "134.78";
+      numero = parseFloat(numero);
+      alert(numero + " " + typeof numero);
+      console.log(numero + " " + typeof numero);
+      console.log("********float*********");
+    </script>
+
+    <script>
+      //conversão explícita
+      var numero = "134.78";
+      numero = parseInt(numero);
+      alert(numero + "" + typeof numero);
+      console.log(numero + " " + typeof numero);
+      console.log("********int*********");
+    </script>
+
+    <script>
+      var produto = "camiseta";
+      var preco1 = 2500;
+      var preco2 = 5000;
+      var resultado = produto + preco1;
+      console.log(resultado);
+      console.log(typeof resultado);
+      console.log("*****************");
+    </script>
+
+    <script>
+      var casado = true;
+      var nome = "pablo";
+      var resultado = casado + nome;
+      console.log(typeof resultado);
+      console.log("********string*********");
+    </script>
+
+    <script>
+      var poupanca = 1000;
+      var falencia = false;
+      var resultado = poupanca + falencia;
+      console.log(resultado);
+      console.log(typeof resultado);
+      console.log("*****************");
+    </script>
+
+    <script>
+      var numero = "23bc";
+      console.log(numero);
+      console.log(typeof numero);
+    </script>
+
+    <script>
+      var numero = '23bc';
+      numero = parseInt(numero);
+      console.log(typeof (numero));
+    </script>
+
+    <script>
+      var numero = 'bc';
+      numero = parseInt(numero);
+      console.log(numero);
+    </script>
+
+    <script>
+      var numero2 = '1.23abc';
+      var numero3 = 'abc';
+      numero2 = parseFloat(numero2);
+      numero3 = parseFloat(numero3);
+      console.log('O valor da variável numero2 era 1.23abc, como float é: ');
+      console.log(numero2);
+      console.log('O valor da variável numero3 era abc, como float é: ');
+      console.log(numero3);
+      console.log('O valor da variável numero3 é numerico e abc não pode ser float:');
+      console.log(typeof(numero3));
+      console.log('**********');
+    </script>
+
+    <script>
+      var idade = prompt('Escreve sua idade','Em número somente');
+      //idade = parseInt(idade);
+      console.log(idade);
+      console.log('sem o parseInt fica como: ');
+      console.log(typeof(idade));
+    </script>
+
+    <script>
+      var idade = prompt('Ecreva sua idade','em números somente');
+      idade = parseInt(idade);
+      if (idade > 18) {
+        console.log('Você é maior de idade');
+      } else {
+        console.log('Você é menor de idade');
+      }
+    </script>
+
+  </body>
+</html>

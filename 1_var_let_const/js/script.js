@@ -11,7 +11,8 @@ let nome = 'Pedro';
  */
 
 function dizerNome(){
-    var nome = 'João';
+    //var nome = 'João';
+    let nome = 'José';
     console.log("O nome é " + nome);
 }
 /**
